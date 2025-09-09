@@ -4,7 +4,7 @@ const { checkIfUserFollows } = require("../utils/checkIfUserFollows");
 
 const { addFollowToDB, deleteFollowFromDB, getFollowingListFromDB, getFollowingDetailsFromDB, getFollowerListFromDB, getFollowerDetailsFromDB } = require("../repository/follow.repository");
 const Joi = require("joi");
-const { verifyUserId } = require("../utils/verifyUserId.JS");
+const { verifyUserId } = require("../utils/verifyUserId");
 // const { deleteFollowFromDB } = require("../repository/follow.repository")
 
 
@@ -312,4 +312,5 @@ module.exports = {
     unfollowUser,
     getFollowingList,
     getFollowerList
+
 };
